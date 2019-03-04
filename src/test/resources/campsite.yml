@@ -1,0 +1,44 @@
+execution:
+- concurrency: 1000
+#  throughput: 2000
+  ramp-up: 3ms
+  hold-for: 3m
+  steps: 5
+  scenario: campsite
+
+scenarios:
+  campsite:
+    timeout: 10s
+#    keepalive: true
+    retrieve-resources: false
+    store-cache: false
+    store-cookie: false
+    headers:
+      Content-Type: 'application/json'
+    requests:
+    - url: 'http://localhost:8080/api/v1/campsites/9045b895-f634-4f2b-997c-fe5a2dbe8126/availabilities'
+      method: GET
+    - url: 'http://localhost:8080/api/v1/campsites/9045b895-f634-4f2b-997c-fe5a2dbe8126/availabilities'
+      method: GET
+    - url: 'http://localhost:8080/api/v1/campsites/9045b895-f634-4f2b-997c-fe5a2dbe8126/availabilities'
+      method: GET
+    - url: 'http://localhost:8080/api/v1/campsites/9045b895-f634-4f2b-997c-fe5a2dbe8126/availabilities'
+      method: GET
+    - url: 'http://localhost:8080/api/v1/campsites/9045b895-f634-4f2b-997c-fe5a2dbe8126/availabilities'
+      method: GET
+    - url: 'http://localhost:8080/api/v1/campsites/9045b895-f634-4f2b-997c-fe5a2dbe8126/availabilities'
+      method: GET
+    - url: 'http://localhost:8080/api/v1/campsites/9045b895-f634-4f2b-997c-fe5a2dbe8126/availabilities'
+      method: GET
+    - url: 'http://localhost:8080/api/v1/campsites/9045b895-f634-4f2b-997c-fe5a2dbe8126/availabilities'
+      method: GET
+    - url: 'http://localhost:8080/api/v1/campsites/9045b895-f634-4f2b-997c-fe5a2dbe8126/availabilities'
+      method: GET
+    - url: 'http://localhost:8080/api/v1/campsites/9045b895-f634-4f2b-997c-fe5a2dbe8126/availabilities'
+      method: GET
+modules:
+  jmeter:
+    memory-xmx: 3G
+    java.net.preferIPv4Stack: true
+  console:
+    screen: gui

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <logger name="logging.level.org.hibernate.SQL" level="DEBUG"/>
+
+    <!-- Uncomment to enable SQL parameter values logging -->
+    <!--<logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>-->
+
+    <logger name="com.upgrade.challenge.campsite.api.CampsiteService" level="DEBUG"/>
+</configuration>

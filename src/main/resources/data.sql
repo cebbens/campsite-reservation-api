@@ -1,0 +1,1 @@
+INSERT INTO campsites(id, created, updated, capacity, name) VALUES ('9045b895f6344f2b997cfe5a2dbe8126', now(), now(), 100, 'Upgrade Campsite One');
